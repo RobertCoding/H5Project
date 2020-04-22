@@ -44,7 +44,7 @@
             word-break: break-all;
         }
         .fifth_col{
-            text-align: center;
+            /* text-align: center; */
         }
 
     </style>
@@ -68,7 +68,7 @@
     <table class="element_table">
         <colgroup>
             <col width = "50">
-            <col width = "100">
+            <col width = "150">
             <col width = "100">
             <!-- <col width = "500"> -->
         </colgroup>
@@ -374,7 +374,7 @@
         <!-- Text content -->
         <tr style="line-height: 3rem;">
             <th>No.</th>
-            <th>簡稱/評價</th>
+            <th>簡稱/原意/評價</th>
             <th>元素</th>
             <th>用法</th>
             <th>效果</th>
@@ -383,7 +383,7 @@
         <!-- blockquote -->
         <tr>
             <td class="first_col"><span class="mycount"></span></td>
-            <td class="second_col">區塊引言 / 文章的引用內容<br></td>
+            <td class="second_col">區塊引言 /<br>blockquote /<br>文章的引用內容，引用長文本</td>
             <td class="third_col">blockquote</td>
             <td class="forth_col"><xmp>
 <blockquote cite="https://www.huxley.net/bnw/four.html">
@@ -405,30 +405,292 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- temp -->
+        <!-- div -->
         <tr>
             <td class="first_col"><span class="mycount"></span></td>
-            <td class="second_col"> / <br></td>
-            <td class="third_col"></td>
+            <td class="second_col">分區 /<br>Content Division /<br>通用型内容容器，單純做容器，通常與class或id連用</td>
+            <td class="third_col">div</td>
             <td class="forth_col"><xmp>
-
+<div class="warning">
+    <img src="/media/examples/leopard.jpg"
+            alt="An intimidating leopard.">
+    <p>Beware of the leopard</p>
+</div>
             </xmp></td>
             <td class="fifth_col">
-                
+                <div class="warning">
+                    <img src="./images/leopard.jpg"
+                         alt="An intimidating leopard.">
+                    <p>Beware of the leopard</p>
+                </div>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="./css/div.css">
+
+
+
+
+
+
+        <!-- dl dt dd -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">dl描述列表 dt描述標題 dd描述內容 / <br> describe a term/name in a description list ; dl: defines a description list; dt: defines terms/names/<br>dd 會與dt dl連用</td>
+            <td class="third_col">dl, dt, dd</td>
+            <td class="forth_col"><xmp>
+<p>Cryptids of Cornwall:</p>
+
+<dl>
+    <dt>Beast of Bodmin</dt>
+    <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+    <dt>Morgawr</dt>
+    <dd>A sea serpent.</dd>
+
+    <dt>Owlman</dt>
+    <dd>A giant owl-like creature.</dd>
+</dl>
+            </xmp></td>
+            <td class="fifth_col">
+                <p class="dd_p_style">Cryptids of Cornwall:</p>
+
+                <dl>
+                    <dt>Beast of Bodmin</dt>
+                    <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+                    <dt>Morgawr</dt>
+                    <dd>A sea serpent.</dd>
+
+                    <dt>Owlman</dt>
+                    <dd>A giant owl-like creature.</dd>
+                </dl>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="./css/dd.css">
+
+
+
+
+        <!-- figure figcaption -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">圖片與說明 /<br>Figure Caption element / <br>描述圖片, figure figcaption常一起聯用</td>
+            <td class="third_col">figure figcaption</td>
+            <td class="forth_col"><xmp>
+<figure>
+    <img src="/media/examples/elephant-660-480.jpg"
+            alt="Elephant at sunset">
+    <figcaption>An elephant at sunset</figcaption>
+</figure>
+            </xmp></td>
+            <td class="fifth_col">
+                <div class="figcaption_style">
+                    <figure>
+                        <img src="./images/elephant.jpg"
+                             alt="Elephant at sunset">
+                        <figcaption>An elephant at sunset</figcaption>
+                    </figure>
+                </div>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="./css/figcaption.css">
+
+
+
+
+        <!-- hr -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">分隔線 /<br>horizontal rule or line / <br>水平線</td>
+            <td class="third_col">hr</td>
+            <td class="forth_col"><xmp>
+<p>§1: The first rule of Fight Club is: You do not talk about Fight Club.</p>
+
+<hr>
+
+<p>§2: The second rule of Fight Club is: Always bring cupcakes.</p>
+            </xmp></td>
+            <td class="fifth_col">
+                <div class="hr_style">
+                    <p>§1: The first rule of Fight Club is: You do not talk about Fight Club.</p>
+
+                    <hr>
+                    
+                    <p>§2: The second rule of Fight Club is: Always bring cupcakes.</p>
+                </div>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="./css/hr.css">
+
+
+
+
+
+
+        <!-- li -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">列表子元素 /<br>item in a list / <br>要與ol, ul, menu聯用</td>
+            <td class="third_col">li</td>
+            <td class="forth_col"><xmp>
+    <p>Apollo astronauts:<p/>
+
+    <ul>
+        <li>Neil Armstrong</li>
+        <li>Alan Bean</li>
+        <li>Peter Conrad</li>
+        <li>Edgar Mitchell</li>
+        <li>Alan Shepard</li>
+    </ul>
+            </xmp></td>
+            <td class="fifth_col">
+                <div class="li_style">
+                    <p>Apollo astronauts:<p/>
+
+                    <ul>
+                        <li>Neil Armstrong</li>
+                        <li>Alan Bean</li>
+                        <li>Peter Conrad</li>
+                        <li>Edgar Mitchell</li>
+                        <li>Alan Shepard</li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="./css/li.css">
+
+
+
+
+
+
+        <!-- ol -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">有序列表 /<br>ordered list / <br>有流水編號</td>
+            <td class="third_col">ol</td>
+            <td class="forth_col"><xmp>
+<ol>
+    <li>Mix flour, baking powder, sugar, and salt.</li>
+    <li>In another bowl, mix eggs, milk, and oil.</li>
+    <li>Stir both mixtures together.</li>
+    <li>Fill muffin tray 3/4 full.</li>
+    <li>Bake for 20 minutes.</li>
+</ol>
+            </xmp></td>
+            <td class="fifth_col">
+                <div class="ol_style">
+                    <ol>
+                        <li>Mix flour, baking powder, sugar, and salt.</li>
+                        <li>In another bowl, mix eggs, milk, and oil.</li>
+                        <li>Stir both mixtures together.</li>
+                        <li>Fill muffin tray 3/4 full.</li>
+                        <li>Bake for 20 minutes.</li>
+                    </ol>
+                </div>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="./css/ol.css">
+
+
+
+
+
+        <!-- ul -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">無序列表 /<br>unordered list / <br>表頭只有符號</td>
+            <td class="third_col">ul</td>
+            <td class="forth_col"><xmp>
+<ul>
+    <li>Milk</li>
+    <li>Cheese
+        <ul>
+            <li>Blue cheese</li>
+            <li>Feta</li>
+        </ul>
+    </li>
+</ul>
+            </xmp></td>
+            <td class="fifth_col">
+                <div class="ul_style">
+                    <ul>
+                        <li>Milk</li>
+                        <li>Cheese
+                            <ul>
+                                <li>Blue cheese</li>
+                                <li>Feta</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+
+
+
+
+
+
+        <!-- p -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">段落元素 /<br>paragraph / <br>一個段落，屬block</td>
+            <td class="third_col">p</td>
+            <td class="forth_col"><xmp>
+<p>Geckos are a group of usually small, usually nocturnal lizards. 
+    They are found on every continent except Australia.</p>
+
+<p>Some species live in houses where they hunt insects attracted 
+    by artificial light.</p>
+            </xmp></td>
+            <td class="fifth_col">
+                <div class="p_style">
+                    <p>Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except Australia.</p>
+ 
+                    <p>Some species live in houses where they hunt insects attracted by artificial light.</p>
+                </div>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="./css/p.css">
+
+
+
+
+        <!-- pre -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">原始文本 /<br>preformatted text / <br>保留原始文字編排方式呈現</td>
+            <td class="third_col">pre</td>
+            <td class="forth_col"><xmp>
+<pre>
+    L          TE
+        A       A
+        C    V
+            R A
+            DOU
+            LOU
+        VILISÉ
+        OTE-  TU VEUX
+        LA    BIEN
+        SI      RESPI
+                RER       - Apollinaire
+</pre>
+            </xmp></td>
+            <td class="fifth_col">
+                <pre>
+                    L          TE
+                        A       A
+                        C    V
+                            R A
+                            DOU
+                            LOU
+                        VILISÉ
+                        OTE-  TU VEUX
+                        LA    BIEN
+                        SI      RESPI
+                                RER       - Apollinaire
+                </pre> 
             </td>
         </tr>
 
@@ -438,10 +700,10 @@
 
 
 
-
+        <!-- Inline text semantics -->
         <tr style="line-height: 3rem;">
             <th>No.</th>
-            <th>簡稱/評價</th>
+            <th>簡稱/原意/評價</th>
             <th>元素</th>
             <th>用法</th>
             <th>效果</th>
@@ -450,26 +712,372 @@
 
         <tr>
             <td class="first_col"><span class="mycount"></span></td>
-            <td class="second_col">超連結</td>
+            <td class="second_col">超連結 /<br>anchor /<br>超鏈接</td>
             <td class="third_col">a</td>
             <td class="forth_col"><xmp><a href="https://example.com">Website</a></xmp></td>
             <td class="fifth_col"><a href="https://example.com">Website</a></td>
         </tr>
         <tr>
             <td class="first_col"><span class="mycount"></span></td>
-            <td class="second_col">縮寫</td>
+            <td class="second_col">縮寫 /<br>Abbreviation /<br>附完整描述</td>
             <td class="third_col">abbr</td>
             <td class="forth_col"><xmp><abbr title="Cascading Style Sheets">CSS</abbr></xmp></td>
             <td class="fifth_col"><abbr title="Cascading Style Sheets">CSS</abbr></td>
         </tr>
         <tr>
             <td class="first_col"><span class="mycount"></span></td>
-            <td class="second_col"></td>
-            <td class="third_col"></td>
-            <td class="forth_col"><xmp></xmp></td>
-            <td class="fifth_col"></td>
+            <td class="second_col">提醒注意 /<br>Bring Attention /<br>變粗體吸引注意</td>
+            <td class="third_col">b</td>
+            <td class="forth_col"><xmp>
+<p>The two most popular science courses offered by the school are 
+<b class="term">chemistry</b> (the study of chemicals and the 
+composition of substances) and <b class="term">physics</b> 
+(the study of the nature and properties of matter and energy).</p>
+            </xmp></td>
+            <td class="fifth_col">
+                <div class="b_style">
+                    <p>The two most popular science courses offered by the school are <b class="term">chemistry</b> (the study of chemicals and the composition of substances) and <b class="term">physics</b> (the study of the nature and properties of matter and energy).</p>
+                </div>
+            </td>
         </tr>
         
+
+
+        <!-- bdi -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">雙向隔離 /<br>Bidirectional Isolate /<br>用於外文，特別是文字方向性不明時</td>
+            <td class="third_col">bdi</td>
+            <td class="forth_col"><xmp>
+<h1>World wrestling championships</h1>
+
+<ul>
+    <li><bdi class="name">Evil Steven</bdi>: 1st place</li>
+    <li><bdi class="name">François fatale</bdi>: 2nd place</li>
+    <li><span class="name">تیز سمی</span>: 3rd place</li>
+    <li><bdi class="name">الرجل القوي إيان</bdi>: 4th place</li>
+    <li><span class="name" dir="auto">تیز سمی</span>: 5th place</li>
+</ul>
+            </xmp></td>
+            <td class="fifth_col">
+                <div class="bdi_style">
+                    <h1>World wrestling championships</h1>
+
+                    <ul>
+                    <li><bdi class="name">Evil Steven</bdi>: 1st place</li>
+                    <li><bdi class="name">François fatale</bdi>: 2nd place</li>
+                    <li><span class="name">تیز سمی</span>: 3rd place</li>
+                    <li><bdi class="name">الرجل القوي إيان</bdi>: 4th place</li>
+                    <li><span class="name" dir="auto">تیز سمی</span>: 5th place</li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="/css/bdi.css">
+
+
+
+        <!-- bdo -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">雙向覆蓋 /<br>mean /<br>指定文字排列方向</td>
+            <td class="third_col">bdo</td>
+            <td class="forth_col"><xmp>
+<p>Looks like this in Hebrew: <span dir="rtl">
+    אה, אני אוהב להיות ליד חוף הים</span></p>
+
+<p>In the computer's memory, this is stored as 
+    <bdo dir="ltr">אה, אני אוהב להיות ליד חוף הים</bdo></p>
+            </xmp></td>
+            <td class="fifth_col">
+                <div class="bdo_style">
+                    <p>Looks like this in Hebrew: <span dir="rtl">אה, אני אוהב להיות ליד חוף הים</span></p>
+
+                    <p>In the computer's memory, this is stored as <bdo dir="ltr">אה, אני אוהב להיות ליד חוף הים</bdo></p>
+                </div>
+            </td>
+        </tr>
+
+
+
+
+        <!-- br -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">換行 /<br>line break /<br>換行</td>
+            <td class="third_col">br</td>
+            <td class="forth_col"><xmp>
+    <p> O’er all the hilltops<br>
+        Is quiet now,<br>
+        In all the treetops<br>
+    </p>
+            </xmp></td>
+            <td class="fifth_col">
+                <p> O’er all the hilltops<br>
+                    Is quiet now,<br>
+                    In all the treetops<br>
+                </p>
+            </td>
+        </tr>
+
+
+
+        <!-- cite -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">引用 /<br>Citation /<br>作品的引用，且必須包含作品的標題，通常和blockquote聯用</td>
+            <td class="third_col">cite</td>
+            <td class="forth_col"><xmp>
+    <blockquote>
+        <p>It was a bright cold day in April, and the clocks were 
+            striking thirteen.</p>
+        <footer>
+            First sentence in <cite><a href="http://www.george-orwell.org/1984/0.html">
+                Nineteen Eighty-Four</a></cite> by George Orwell (Part 1, Chapter 1).
+        </footer>
+    </blockquote>
+            </xmp></td>
+            <td class="fifth_col">
+                <div class="cite_style">
+                    <blockquote>
+                        <p>It was a bright cold day in April, and the clocks were striking thirteen.</p>
+                        <footer>
+                            First sentence in <cite><a href="http://www.george-orwell.org/1984/0.html">Nineteen Eighty-Four</a></cite> by George Orwell (Part 1, Chapter 1).
+                        </footer>
+                    </blockquote>
+                </div>
+            </td>
+        </tr>
+
+
+
+
+
+
+
+        <!-- code -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">代碼 /<br>code /<br>呈現一段計算機代碼，字形會變</td>
+            <td class="third_col">code</td>
+            <td class="forth_col"><xmp>
+<p>The <code>push()</code> method adds one or more elements to the end 
+    of an array and returns the new length of the array.</p>
+            </xmp></td>
+            <td class="fifth_col">
+                <p>The <code>push()</code> method adds one or more elements to the end of an array and returns the new length of the array.</p>
+            </td>
+        </tr>
+
+
+
+
+
+
+        <!-- data -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">數據 /<br>data /<br>給機器讀的代碼，內容是與時間或者日期相關的，則一定要使用 <code>< time ></code></td>
+            <td class="third_col">data</td>
+            <td class="forth_col"><xmp>
+<p>New Products:</p>
+<ul>
+    <li><data value="398">Mini Ketchup</data></li>
+    <li><data value="399">Jumbo Ketchup</data></li>
+    <li><data value="400">Mega Jumbo Ketchup</data></li>
+</ul>
+            </xmp></td>
+            <td class="fifth_col">
+                <div class="data_style">
+                    <p>New Products:</p>
+                    <ul>
+                        <li><data value="398">Mini Ketchup</data></li>
+                        <li><data value="399">Jumbo Ketchup</data></li>
+                        <li><data value="400">Mega Jumbo Ketchup</data></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="./css/data.css">
+
+
+
+
+        <!-- dfn -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">定義 /<br>Definition /<br>閱讀用，被標註的文字屬被定義，會變斜體</td>
+            <td class="third_col">dfn</td>
+            <td class="forth_col"><xmp>
+<p>A <dfn id="def-validator">validator</dfn> is a program 
+    that checks for syntax errors in code or documents.</p>
+            </xmp></td>
+            <td class="fifth_col">
+                <p>A <dfn id="def-validator">validator</dfn> is a program that checks for syntax errors in code or documents.</p>
+            </td>
+        </tr>
+
+
+
+
+
+
+
+        <!-- em -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">著重 /<br>emphasis /<br>閱讀用，被標註的文字屬被強調，會變斜體</td>
+            <td class="third_col">em</td>
+            <td class="forth_col"><xmp>
+<p>Get out of bed <em>now</em>!</p>
+
+<p>We <em>had</em> to do something about it.</p>
+
+<p>This is <em>not</em> a drill!</p>
+            </xmp></td>
+            <td class="fifth_col">
+                <p>Get out of bed <em>now</em>!</p>
+
+                <p>We <em>had</em> to do something about it.</p>
+
+                <p>This is <em>not</em> a drill!</p>
+            </td>
+        </tr>
+
+
+
+
+
+        <!-- i -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">斜體 /<br>italic /<br>斜體文本效果</td>
+            <td class="third_col">i</td>
+            <td class="forth_col"><xmp>
+<p>I looked at it and thought <i>This can't be real!</i></p>
+
+<p><i class="latin">Musa</i> is one of two or three genera in 
+    the family <i class="latin">Musaceae</i>; it includes bananas and plantains.</p>
+
+<p>The term <i>bandwidth</i> describes the measure of how much 
+    information can pass through a data connection in a given amount of time.</p>
+            </xmp></td>
+            <td class="fifth_col">
+                <p>I looked at it and thought <i>This can't be real!</i></p>
+
+                <p><i class="latin">Musa</i> is one of two or three genera in the family <i class="latin">Musaceae</i>; it includes bananas and plantains.</p>
+
+                <p>The term <i>bandwidth</i> describes the measure of how much information can pass through a data connection in a given amount of time.</p>
+            </td>
+        </tr>
+
+
+
+
+
+
+        <!-- kbd -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">電腦按鍵 /<br>Keyboard Input /<br>電腦按鍵專用，字型會變；可加CSS修飾成電腦按鍵外型</td>
+            <td class="third_col">kbd</td>
+            <td class="forth_col"><xmp>
+<p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + 
+    <kbd>R</kbd> to re-render an MDN page.</p>
+            </xmp></td>
+            <td class="fifth_col">
+                <div class="kbd_style">
+                    <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render an MDN page.</p>
+                </div>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="./css/kbd.css">
+
+
+
+
+
+
+
+        <!-- mark -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">標記 /<br>mark /<br>文字反白，螢光特效</td>
+            <td class="third_col">mark</td>
+            <td class="forth_col"><xmp>
+<p>Search results for "salamander":</p>
+
+<hr>
+
+<p>Several species of <mark>salamander</mark> inhabit the temperate 
+    rainforest of the Pacific Northwest.</p>
+
+<p>Most <mark>salamander</mark>s are nocturnal, and hunt for insects, 
+    worms, and other small creatures.</p>
+            </xmp></td>
+            <td class="fifth_col">
+                <p>Search results for "salamander":</p>
+
+                <hr>
+
+                <p>Several species of <mark>salamander</mark> inhabit the temperate rainforest of the Pacific Northwest.</p>
+
+                <p>Most <mark>salamander</mark>s are nocturnal, and hunt for insects, worms, and other small creatures.</p>
+            </td>
+        </tr>
+
+
+
+
+
+
+        <!-- q -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">短引用 /<br>quotation /<br>引用短的文本</td>
+            <td class="third_col">q</td>
+            <td class="forth_col"><xmp>
+<p>When Dave asks HAL to open the pod bay door, HAL answers: 
+    <q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">
+        I'm sorry, Dave. I'm afraid I can't do that.</q></p>
+            </xmp></td>
+            <td class="fifth_col">
+                <p>When Dave asks HAL to open the pod bay door, HAL answers: <q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">I'm sorry, Dave. I'm afraid I can't do that.</q></p>
+            </td>
+        </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -478,7 +1086,7 @@
         <!-- temp -->
         <tr>
             <td class="first_col"><span class="mycount"></span></td>
-            <td class="second_col"> / <br></td>
+            <td class="second_col"> /<br>mean /<br></td>
             <td class="third_col"></td>
             <td class="forth_col"><xmp>
 
@@ -487,6 +1095,10 @@
                 
             </td>
         </tr>
+
+
+
+
 
     </table>
 

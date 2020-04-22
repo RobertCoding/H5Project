@@ -1,0 +1,4 @@
+.data_style ata:hover::after {
+    content: ' (ID ' attr(value) ')';
+    font-size: .7em;
+}

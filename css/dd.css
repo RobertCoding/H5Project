@@ -1,0 +1,19 @@
+.output {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.dd_p_style{
+    font-weight: bold;
+}
+dt {
+    font-weight: bold;
+}
+
+dl,
+dd {
+    font-size: .9rem;
+}
+
+dd {
+    margin-bottom: 1em;
+}

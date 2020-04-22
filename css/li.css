@@ -1,0 +1,8 @@
+.li_style p,
+li {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.li_style p {
+    font-weight: bold;
+}
