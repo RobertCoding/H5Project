@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 elements</title>
+    <style type="text/css">
+        /* 計數器 */
+        body{
+            counter-reset: mycount;           /* Set the counter to 0 */
+            /* counter-reset: myTextcount; */
+        }
+        .mycount:before{
+            counter-increment: mycount;      /* Increment the counter */
+            content: counter(mycount) ". "; /* Display the counter */
+        }
+        /* 改表格 */
+        table{
+            border-collapse:collapse;
+            border:1px solid black;
+        }
+        th{
+            border:1px solid black;
+        }
+        td{
+            border:1px solid black;
+        }
+        .element_table{
+            width: 100%;
+            table-layout: fixed;
+        }
+        .first_col{
+            text-align: center;
+        }
+        .second_col{
+            text-align: center;
+            word-break: break-all;
+        }
+        .third_col{
+            text-align: center;
+        }
+        .forth_col{
+            /* 自動換行 */
+            word-break: break-all;
+        }
+        .fifth_col{
+            text-align: center;
+        }
+
+    </style>
+
+    <!-- 改內容 -->
+    <!-- 用於address -->
+    <link rel="stylesheet" href="/css_group/address.css">
+    <!-- 用在article -->
+    <link rel="stylesheet" href="/css_group/article.css">
+    <!-- 用在aside -->
+    <link rel="stylesheet" href="/css_group/aside.css">
+
+
+</head>
+<body>
+    <h1>HTML5 elements</h1>
+    <h2>文件架構圖：</h2>
+    <img src="/img/document_structure.gif" alt="文件架構"><br>
+    <br>
+
+    <table class="element_table">
+        <colgroup>
+            <col width = "50">
+            <col width = "100">
+            <col width = "100">
+            <!-- <col width = "500"> -->
+        </colgroup>
+        <tr>
+            <th>No.</th>
+            <th>簡稱/評價</th>
+            <th>元素</th>
+            <th>用法</th>
+            <th>效果</th>
+        </tr>
+
+        <!-- Content sectioning -->
+        <!-- address -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">聯絡方式 / <br>建議CSS修飾<br></td>
+            <td class="third_col">address</td>
+            <td class="forth_col"><xmp>
+    <address>
+        <a href="mailto:jim@rock.com">jim@rock.com</a><br>
+        <a href="tel:+13115552368">(311) 555-2368</a>
+    </address>
+            </xmp></td>
+            <td class="fifth_col">
+                <address>
+                    <a href="mailto:jim@rock.com">jim@rock.com</a><br>
+                    <a href="tel:+13115552368">(311) 555-2368</a>
+                </address>
+            </td>
+        </tr>
+
+
+        <!-- header -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">頁眉 / <br>還在想</td>
+            <td class="third_col">header</td>
+            <td class="forth_col"><xmp>
+<header class="page-header">
+    <h1>Cute Puppies Express!</h1>
+</header>
+
+<main>
+    <p>I love beagles <em>so</em> much! Like, really, a lot. 
+        They’re adorable and their ears are so, so snuggly soft!</p>
+</main>
+            </xmp></td>
+            <td class="fifth_col">
+                <header class="page-header">
+                    <h1>Cute Puppies Express!</h1>
+                </header>
+                
+                <main>
+                    <p>I love beagles <em>so</em> much! Like, really, a lot. They’re adorable and their ears are so, so snuggly soft!</p>
+                </main>
+            </td>
+        </tr>
+        <!-- 用於header -->
+        <link rel="stylesheet" href="/css_group/header.css">
+
+
+
+
+        <!-- article -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">獨立小短文 / <br>還在想</td>
+            <td class="third_col">article</td>
+            <td class="forth_col"><xmp>
+    <article class="forecast">
+    <h1>Weather forecast for Seattle</h1>
+        <article class="day-forecast">
+            <h2>03 March 2018</h2>
+            <p>Rain.</p>
+        </article>
+        <article class="day-forecast">
+            <h2>04 March 2018</h2>
+            <p>Periods of rain.</p>
+        </article>
+    </article>
+            </xmp></td>
+            <td class="fifth_col">
+                <article class="forecast">
+                    <h1>Weather forecast for Seattle</h1>
+                    <article class="day-forecast">
+                        <h2>03 March 2018</h2>
+                        <p>Rain.</p>
+                    </article>
+                    <article class="day-forecast">
+                        <h2>04 March 2018</h2>
+                        <p>Periods of rain.</p>
+                    </article>
+                </article>                
+            </td>
+        </tr>
+
+
+
+        <!-- aside -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">側欄 / <br>建議要用CSS修飾</td>
+            <td class="third_col">aside</td>
+            <td class="forth_col"><xmp>
+    <p>Salamanders are a group of amphibians with 
+        a lizard-like appearance, including short legs 
+        and a tail in both larval and adult forms.
+    </p>
+
+    <aside>
+        <p>The Rough-skinned Newt defends itself with 
+            a deadly neurotoxin.</p>
+    </aside>
+            </xmp></td>
+            <td class="fifth_col">
+                <p>Salamanders are a group of amphibians with 
+                    a lizard-like appearance, including short legs 
+                    and a tail in both larval and adult forms.
+                </p>
+            
+                <aside>
+                    <p>The Rough-skinned Newt defends itself with 
+                        a deadly neurotoxin.</p>
+                </aside>
+                <p>Several species of salamander inhabit the temperate rainforest of the Pacific Northwest, including the Ensatina, the Northwestern Salamander and the Rough-skinned Newt. Most salamanders are nocturnal, and hunt for insects, worms and other small creatures.</p>
+            </td>
+        </tr>
+        
+
+        <!-- footer -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">頁腳 / <br>版權宣告用</td>
+            <td class="third_col">footer</td>
+            <!-- shift + tab 可以減少縮排 -->
+            <td class="forth_col"><xmp>
+    <article>
+        <h1>How to be a wizard</h1>
+        <ol>
+            <li>Grow a long, majestic beard.</li>
+            <li>Have I mentioned the beard?</li>
+        </ol>
+        <footer>
+            <p>© 2018 Gandalf</p>
+        </footer>
+    </article>
+            </xmp></td>
+            <td class="fifth_col">
+                <article class="article_footer">
+                    <h1>How to be a wizard</h1>
+                    <ol>
+                        <li>Grow a long, majestic beard.</li>
+                        <li>Have I mentioned the beard?</li>
+                    </ol>
+                    <footer>
+                        <p>© 2018 Gandalf</p>
+                    </footer>
+                </article>
+            </td>
+        </tr>
+        <!-- 用於footer -->
+        <link rel="stylesheet" href="/css_group/footer.css">
+
+
+
+
+        <!-- h1 h2 h3 -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">標題 / <br>還在想</td>
+            <td class="third_col">h1 h2 h3</td>
+            <td class="forth_col"><xmp>
+    <h1>Heading level 1</h1>
+    <h2>Heading level 2</h2>
+    <h3>Heading level 3</h3>
+    <h4>Heading level 4</h4>
+    <h5>Heading level 5</h5>
+    <h6>Heading level 6</h6>
+            </xmp></td>
+            <td class="fifth_col">
+                <h1>Heading level 1</h1>
+                <h2>Heading level 2</h2>
+                <h3>Heading level 3</h3>
+                <h4>Heading level 4</h4>
+                <h5>Heading level 5</h5>
+                <h6>Heading level 6</h6>
+            </td>
+        </tr>
+
+
+
+
+        <!-- main -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">主體 / <br>展現文章中心主題</td>
+            <td class="third_col">main</td>
+            <td class="forth_col"><xmp>
+<header>Gecko facts</header>
+
+<main role="main">
+    <p>Geckos are a group of usually small, usually nocturnal 
+        lizards. They are found on every continent except 
+        Australia.</p>
+    
+    <p>Many species of gecko have adhesive toe pads which enable 
+        them to climb walls and even windows.</p>
+</main>
+            </xmp></td>
+            <td class="fifth_col">
+                <header class="case_main_header">Gecko facts</header>
+
+                <main role="main">
+                    <p>Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except Australia.</p>
+                 
+                    <p>Many species of gecko have adhesive toe pads which enable them to climb walls and even windows.</p>
+                </main>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="/css_group/main.css">
+
+
+
+
+
+        <!-- nav -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">導航欄 / <br>通常會出現下拉選單或是麵包屑足跡或充當部落格右上方的小目錄</td>
+            <td class="third_col">nav</td>
+            <td class="forth_col"><xmp>
+<nav class="crumbs">
+    <ol>
+        <li class="crumb"><a href="bikes">Bikes</a></li>
+        <li class="crumb"><a href="bikes/bmx">BMX</a></li>
+        <li class="crumb">Jump Bike 3000</li>
+    </ol>
+</nav>
+
+<h1>Jump Bike 3000</h1>
+<p>This BMX bike is a solid step into the pro world. It looks 
+    as legit as it rides and is built to polish your skills.</p>
+            </xmp></td>
+            <td class="fifth_col">
+                <nav class="crumbs">
+                    <ol>
+                        <li class="crumb"><a href="bikes">Bikes</a></li>
+                        <li class="crumb"><a href="bikes/bmx">BMX</a></li>
+                        <li class="crumb">Jump Bike 3000</li>
+                    </ol>
+                </nav>
+                
+                <h1>Jump Bike 3000</h1>
+                <p>This BMX bike is a solid step into the pro world. It looks as legit as it rides and is built to polish your skills.</p>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="/css_group/nav.css">
+
+
+
+        <!-- section -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">文章段落 / <br>文章的一部分</td>
+            <td class="third_col">section</td>
+            <td class="forth_col"><xmp>
+    <h1>How to Fish</h1>
+    <section>
+        <h2>Introduction</h2>
+        <p>People have been catching fish for food 
+            since before recorded history…</p>
+    </section>
+    
+    <section>
+        <h2>Equipment</h2>
+        <p>The first thing you’ll need is a fishing 
+            rod or pole that you find comfortable 
+            and is strong enough for the kind of 
+            fish you’re expecting to land…</p>
+    </section>
+            </xmp></td>
+            <td class="fifth_col">
+                <h1>How to Fish</h1>
+                <section>
+                    <h2>Introduction</h2>
+                    <p>People have been catching fish for food since before recorded history…</p>
+                </section>
+
+                <section>
+                    <h2>Equipment</h2>
+                    <p>The first thing you’ll need is a fishing rod or pole that you find comfortable and is strong enough for the kind of fish you’re expecting to land…</p>
+                </section>
+            </td>
+        </tr>
+        
+
+
+
+
+
+        
+
+        <!-- Text content -->
+        <tr style="line-height: 3rem;">
+            <th>No.</th>
+            <th>簡稱/評價</th>
+            <th>元素</th>
+            <th>用法</th>
+            <th>效果</th>
+        </tr>
+
+        <!-- blockquote -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">區塊引言 / 文章的引用內容<br></td>
+            <td class="third_col">blockquote</td>
+            <td class="forth_col"><xmp>
+<blockquote cite="https://www.huxley.net/bnw/four.html">
+    <p>Words can be like X-rays, if you use them properly—
+        they’ll go through anything. You read and you’re pierced.
+    </p>
+    <footer>—Aldous Huxley, <cite>Brave New World</cite></footer>
+</blockquote>
+            </xmp></td>
+            <td class="fifth_col">
+                <blockquote cite="https://www.huxley.net/bnw/four.html">
+                    <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+                    <footer>—Aldous Huxley, <cite>Brave New World</cite></footer>
+                </blockquote>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="/css_group/blockquote.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- temp -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col"> / <br></td>
+            <td class="third_col"></td>
+            <td class="forth_col"><xmp>
+
+            </xmp></td>
+            <td class="fifth_col">
+                
+            </td>
+        </tr>
+
+
+
+
+
+
+
+
+        <tr style="line-height: 3rem;">
+            <th>No.</th>
+            <th>簡稱/評價</th>
+            <th>元素</th>
+            <th>用法</th>
+            <th>效果</th>
+        </tr>
+
+
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">超連結</td>
+            <td class="third_col">a</td>
+            <td class="forth_col"><xmp><a href="https://example.com">Website</a></xmp></td>
+            <td class="fifth_col"><a href="https://example.com">Website</a></td>
+        </tr>
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">縮寫</td>
+            <td class="third_col">abbr</td>
+            <td class="forth_col"><xmp><abbr title="Cascading Style Sheets">CSS</abbr></xmp></td>
+            <td class="fifth_col"><abbr title="Cascading Style Sheets">CSS</abbr></td>
+        </tr>
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col"></td>
+            <td class="third_col"></td>
+            <td class="forth_col"><xmp></xmp></td>
+            <td class="fifth_col"></td>
+        </tr>
+        
+
+
+
+
+
+        <!-- temp -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col"> / <br></td>
+            <td class="third_col"></td>
+            <td class="forth_col"><xmp>
+
+            </xmp></td>
+            <td class="fifth_col">
+                
+            </td>
+        </tr>
+
+    </table>
+
+
+
+
+
+</body>
+</html>
