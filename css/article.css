@@ -14,7 +14,7 @@
 
 .day-forecast {
     background: right/contain content-box border-box no-repeat
-        url('/img/rain.svg') white;
+        url('/images/rain.svg') white;
 }
 
 .day-forecast > h2,
