@@ -72,7 +72,7 @@
             <col width = "100">
             <!-- <col width = "500"> -->
         </colgroup>
-        <tr>
+        <tr style="line-height: 3rem;">
             <th>No.</th>
             <th>簡稱/評價</th>
             <th>元素</th>
@@ -1034,7 +1034,7 @@ composition of substances) and <b class="term">physics</b>
         <!-- q -->
         <tr>
             <td class="first_col"><span class="mycount"></span></td>
-            <td class="second_col">短引用 /<br>quotation /<br>引用短的文本</td>
+            <td class="second_col">短引用 /<br>quotation /<br>引用短的文本，類似cite，但內建超連結參數</td>
             <td class="third_col">q</td>
             <td class="forth_col"><xmp>
 <p>When Dave asks HAL to open the pod bay door, HAL answers: 
@@ -1050,6 +1050,347 @@ composition of substances) and <b class="term">physics</b>
 
 
 
+        <!-- rb rp rt -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">音標/注音 /<br>rb:Ruby Base;<br> rp:Ruby Fallback Parenthesis;<br> rt:Ruby Text /<br>用於展示東亞文字的發音，與 < ruby > 共用</td>
+            <td class="third_col">rb rp rt</td>
+            <td class="forth_col"><xmp>
+<ruby>
+    <rb>漢<rb>字
+    <rp>(</rp><rt>kan<rt>ji<rp>)</rp>
+</ruby>
+<ruby>
+    漢 <rp>(</rp><rt>Kan</rt><rp>)</rp>
+    字 <rp>(</rp><rt>ji</rt><rp>)</rp>
+</ruby>
+            </xmp></td>
+            <td class="fifth_col">
+                <ruby>
+                    <rb>漢<rb>字
+                    <rp>(</rp><rt>kan<rt>ji<rp>)</rp>
+                </ruby><br>
+                <ruby>
+                    漢 <rp>(</rp><rt>Kan</rt><rp>)</rp>
+                    字 <rp>(</rp><rt>ji</rt><rp>)</rp>
+                </ruby>
+            </td>
+        </tr>
+
+
+
+
+
+        
+        <!-- rtc -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">音標容器 /<br>Ruby Text Container /<br>裝 rb rp rt用</td>
+            <td class="third_col">rtc</td>
+            <td class="forth_col"><xmp>
+<ruby xml:lang="zh-Hant" style="ruby-position: under;">
+    <rbc>
+        <rb>馬</rb><rp>(</rp><rt>mǎ</rt><rp>)</rp>
+        <rb>來</rb><rp>(</rp><rt>lái</rt><rp>)</rp>
+        <rb>西</rb><rp>(</rp><rt>xī</rt><rp>)</rp>
+        <rb>亞</rb><rp>(</rp><rt>yà</rt><rp>)</rp>
+    </rbc>
+    <rtc xml:lang="en" style="ruby-position: over;">
+        <rp>(</rp><rt>Malaysia</rt><rp>)</rp>
+    </rtc>
+</ruby>
+            </xmp></td>
+            <td class="fifth_col">
+                <ruby xml:lang="zh-Hant" style="ruby-position: under;">
+                    <rbc>
+                        <rb>馬</rb><rp>(</rp><rt>mǎ</rt><rp>)</rp>
+                        <rb>來</rb><rp>(</rp><rt>lái</rt><rp>)</rp>
+                        <rb>西</rb><rp>(</rp><rt>xī</rt><rp>)</rp>
+                        <rb>亞</rb><rp>(</rp><rt>yà</rt><rp>)</rp>
+                    </rbc>
+                    <rtc xml:lang="en" style="ruby-position: over;">
+                        <rp>(</rp><rt>Malaysia</rt><rp>)</rp>
+                    </rtc>
+                </ruby>
+            </td>
+        </tr>
+
+
+
+
+
+        <!-- ruby -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">注音 /<br>ruby /<br>用於展示東亞文字的發音，用來裝 rb rp rt rtc 的容器</td>
+            <td class="third_col">ruby</td>
+            <td class="forth_col"><xmp>
+<ruby>
+    明日 <rp>(</rp><rt>Ashita</rt><rp>)</rp>
+</ruby>
+            </xmp></td>
+            <td class="fifth_col">
+                <ruby>
+                    明日 <rp>(</rp><rt>Ashita</rt><rp>)</rp>
+                </ruby>
+            </td>
+        </tr>
+
+
+
+
+
+        <!-- s -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">刪除線 /<br>strikethrough /<br>刪除線</td>
+            <td class="third_col">s</td>
+            <td class="forth_col"><xmp>
+<p><s>There will be a few tickets available at the box office tonight.</s></p>
+            </xmp></td>
+            <td class="fifth_col">
+                <p><s>There will be a few tickets available at the box office tonight.</s></p>
+            </td>
+        </tr>
+
+
+
+
+
+
+        <!-- samp -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">計算機標籤 /<br>mean /<br>標識計算機程序輸出，標記用有預設特效</td>
+            <td class="third_col">samp</td>
+            <td class="forth_col"><xmp>
+<p><samp>Keyboard not found <br>Press F1 to continue</samp></p>
+            </xmp></td>
+            <td class="fifth_col">
+                <p>I was trying to boot my computer, but I got this hilarious message:</p>
+                <p><samp>Keyboard not found <br>Press F1 to continue</samp></p>
+            </td>
+        </tr>
+
+
+
+
+
+
+
+        <!-- small -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">字元變小 /<br>small /<br>使用後字體變小一號</td>
+            <td class="third_col">small</td>
+            <td class="forth_col"><xmp>
+<p>MDN Web Docs is a learning platform for Web technologies 
+    and the software that powers the Web.</p>
+
+<hr>
+
+<p><small>The content is licensed under a Creative Commons 
+    Attribution-ShareAlike 2.5 Generic License.</small></p>
+            </xmp></td>
+            <td class="fifth_col">
+                <p>MDN Web Docs is a learning platform for Web technologies and the software that powers the Web.</p>
+
+                <hr>
+
+                <p><small>The content is licensed under a Creative Commons Attribution-ShareAlike 2.5 Generic License.</small></p>
+            </td>
+        </tr>
+
+
+
+
+
+
+
+        <!-- span -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">跨度 /<br>mean /<br>通用行內容器，用來修改網頁中的各種小區塊</td>
+            <td class="third_col">span</td>
+            <td class="forth_col"><xmp>
+<p>Add the <span class="ingredient">basil</span>, 
+    <span class="ingredient">pine nuts</span> and 
+    <span class="ingredient">garlic</span> to a blender 
+    and blend into a paste.</p>
+
+<p>Gradually add the <span class="ingredient">olive oil
+
+</span> while running the blender slowly.</p>
+            </xmp></td>
+            <td class="fifth_col">
+                <div class="span_style">
+                    <p>Add the <span class="ingredient">basil</span>, <span class="ingredient">pine nuts</span> and <span class="ingredient">garlic</span> to a blender and blend into a paste.</p>
+
+                    <p>Gradually add the <span class="ingredient">olive oil</span> while running the blender slowly.</p>
+                </div>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="./css/span.css">
+
+
+
+
+
+
+
+        <!-- strong -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">十分重要 /<br>strong importance /<br>重點自動加粗，SEO用，類似< em >，在無障礙環境時(盲語)，會被複誦2次 </td>
+            <td class="third_col">strong</td>
+            <td class="forth_col"><xmp>
+<p>... the most important rule, the rule you can never forget,
+     no matter how much he cries, no matter how much he begs: 
+     <strong>never feed him after midnight</strong>.</p>
+            </xmp></td>
+            <td class="fifth_col">
+                <p>... the most important rule, the rule you can never forget, no matter how much he cries, no matter how much he begs: <strong>never feed him after midnight</strong>.</p>
+            </td>
+        </tr>
+
+
+
+
+
+        <!-- sub -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">下標 /<br>Subscript /<br>用於分子式中元素符號右下角的數字</td>
+            <td class="third_col">sub</td>
+            <td class="forth_col"><xmp>
+<p>Almost every developer's favorite molecule is
+    C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>, 
+    also known as "caffeine."</p>
+            </xmp></td>
+            <td class="fifth_col">
+                <p>Almost every developer's favorite molecule is
+                    C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>, also known as "caffeine."</p>
+            </td>
+        </tr>
+
+
+
+
+
+
+
+        <!-- sup -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">上標 /<br>Superscript /<br>數學式右上角的指數</td>
+            <td class="third_col">sup</td>
+            <td class="forth_col"><xmp>
+<p>The <b>Pythagorean theorem</b> is often expressed as the following equation:</p>
+
+<p><var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> = <var>c<sup>2</sup></var></p>
+            </xmp></td>
+            <td class="fifth_col">
+                <p>The <b>Pythagorean theorem</b> is often expressed as the following equation:</p>
+
+                <p><var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> = <var>c<sup>2</sup></var></p>
+            </td>
+        </tr>
+
+
+
+
+
+
+
+        <!-- time -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">時間 /<br>time /<br>表示日期和時間</td>
+            <td class="third_col">time</td>
+            <td class="forth_col"><xmp>
+<p>The Cure will be celebrating their 40th anniversary on 
+    <time datetime="2018-07-07">July 7</time> in London's Hyde Park.</p>
+
+<p>The concert starts at <time datetime="20:00">20:00</time> 
+    and you'll be able to enjoy the band for at least <time datetime="PT2H30M">2h 30m</time>.</p>
+            </xmp></td>
+            <td class="fifth_col">
+                <p>The Cure will be celebrating their 40th anniversary on <time datetime="2018-07-07">July 7</time> in London's Hyde Park.</p>
+
+                <p>The concert starts at <time datetime="20:00">20:00</time> and you'll be able to enjoy the band for at least <time datetime="PT2H30M">2h 30m</time>.</p>
+            </td>
+        </tr>
+
+
+
+
+
+
+        <!-- u -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">表意不清的標註元素 /<br>Unarticulated Annotation /<br>語意不明，文法有誤</td>
+            <td class="third_col">u</td>
+            <td class="forth_col"><xmp>
+<p>You could use this element to highlight <u>speling</u> 
+    mistakes, so the writer can <u>corect</u> them.</p>
+            </xmp></td>
+            <td class="fifth_col">
+                <div class="u_style">
+                    <p>You could use this element to highlight <u>speling</u> mistakes, so the writer can <u>corect</u> them.</p>
+                </div>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="./css/u.css">
+
+
+
+
+
+
+
+        <!-- var -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">變數名稱 /<br>Variable /<br>用在數學式中，表示變數</td>
+            <td class="third_col">var</td>
+            <td class="forth_col"><xmp>
+<p>The volume of a box is <var>l</var> × <var>w</var> × <var>h</var>, 
+    where <var>l</var> represents the length, <var>w</var> the width 
+    and <var>h</var> the height of the box.</p>
+            </xmp></td>
+            <td class="fifth_col">
+                <p>The volume of a box is <var>l</var> × <var>w</var> × <var>h</var>, where <var>l</var> represents the length, <var>w</var> the width and <var>h</var> the height of the box.</p>
+            </td>
+        </tr>
+
+
+
+
+
+        <!-- wbr -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col"> /<br>Word Break Opportunity /<br></td>
+            <td class="third_col">wbr</td>
+            <td class="forth_col"><xmp>
+<div id="example-paragraphs">
+    <p>Fernstraßenbauprivatfinanzierungsgesetz</p>
+    <p>Fernstraßen<wbr>bau<wbr>privat<wbr>finanzierungs<wbr>gesetz</p>
+    <p>Fernstraßen&shy;bau&shy;privat&shy;finanzierungs&shy;gesetz</p>
+</div>
+            </xmp></td>
+            <td class="fifth_col">
+                <div class="wbr_style">
+                    <div id="example-paragraphs">
+                        <p>Fernstraßenbauprivatfinanzierungsgesetz</p>
+                        <p>Fernstraßen<wbr>bau<wbr>privat<wbr>finanzierungs<wbr>gesetz</p>
+                        <p>Fernstraßen&shy;bau&shy;privat&shy;finanzierungs&shy;gesetz</p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="./css/wbr.css">
 
 
 
@@ -1059,12 +1400,30 @@ composition of substances) and <b class="term">physics</b>
 
 
 
+        <!-- Image and multimedia -->
+        <tr style="line-height: 3rem;">
+            <th>No.</th>
+            <th>簡稱/原意/評價</th>
+            <th>元素</th>
+            <th>用法</th>
+            <th>效果</th>
+        </tr>
 
 
 
 
+        <!-- temp -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col"> /<br>mean /<br></td>
+            <td class="third_col"></td>
+            <td class="forth_col"><xmp>
 
-
+            </xmp></td>
+            <td class="fifth_col">
+                
+            </td>
+        </tr>
 
 
 

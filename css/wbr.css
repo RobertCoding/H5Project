@@ -1,0 +1,10 @@
+.wbr_style output {
+    background-color: gray;
+}
+
+.wbr_style #example-paragraphs {
+    background-color: white;
+    overflow: hidden;
+    resize: horizontal;
+    width: 9rem;
+}

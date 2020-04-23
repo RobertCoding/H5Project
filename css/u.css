@@ -1,0 +1,7 @@
+.u_style p {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.u_style u {
+    text-decoration: #f00 wavy underline;
+}
