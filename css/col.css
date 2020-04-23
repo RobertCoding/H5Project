@@ -1,0 +1,30 @@
+.col_style .batman {
+    background-color: #d7d9f2;
+}
+
+.col_style .flash {
+    background-color: #ffe8d4;
+}
+
+.col_style caption {
+    padding: 8px;
+    caption-side: bottom;
+}
+
+.col_style table {
+    border-collapse: collapse;
+    border: 2px solid rgb(100, 100, 100);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: .7rem;
+}
+
+.col_style td,
+.col_style th {
+    border: 1px solid rgb(100, 100, 100);
+    padding: 10px 10px;
+}
+
+.col_style td {
+    text-align: center;
+}

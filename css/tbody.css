@@ -1,0 +1,32 @@
+.tbody_style thead,
+tfoot {
+    background-color: #3f87a6;
+    color: #fff;
+}
+
+.tbody_style tbody {
+    background-color: #e4f0f5;
+}
+
+.tbody_style caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+
+.tbody_style table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: .8rem;
+}
+
+.tbody_style td,
+.tbody_style th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 5px 10px;
+}
+
+.tbody_style td {
+    text-align: center;
+}

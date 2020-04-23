@@ -1371,7 +1371,7 @@ composition of substances) and <b class="term">physics</b>
         <!-- wbr -->
         <tr>
             <td class="first_col"><span class="mycount"></span></td>
-            <td class="second_col"> /<br>Word Break Opportunity /<br></td>
+            <td class="second_col">換行 /<br>Word Break Opportunity /<br>預設換行點自動換行，視窗縮小時會在預設的斷點換行</td>
             <td class="third_col">wbr</td>
             <td class="forth_col"><xmp>
 <div id="example-paragraphs">
@@ -1412,6 +1412,967 @@ composition of substances) and <b class="term">physics</b>
 
 
 
+        <!-- area -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">圖片超連結 /<br>area /<br>在圖片內設定超連結，要在map內使用</td>
+            <td class="third_col">area</td>
+            <td class="forth_col"><xmp>
+<map name="infographic">
+    <area shape="rect" coords="184,6,253,27"
+            href="https://mozilla.org"
+            target="_blank" alt="Mozilla" />
+    <area shape="circle" coords="130,136,60"
+            href="https://developer.mozilla.org/"
+            target="_blank" alt="MDN" />
+    <area shape="poly" coords="130,6,253,96,223,106,130,39"
+            href="https://developer.mozilla.org/docs/Web/Guide/Graphics"
+            target="_blank" alt="Graphics" />
+    <area shape="poly" coords="253,96,207,241,189,217,223,103"
+            href="https://developer.mozilla.org/docs/Web/HTML"
+            target="_blank" alt="HTML" />
+    <area shape="poly" coords="207,241,54,241,72,217,189,217"
+            href="https://developer.mozilla.org/docs/Web/JavaScript"
+            target="_blank" alt="JavaScript" />
+    <area shape="poly" coords="54,241,6,97,36,107,72,217"
+            href="https://developer.mozilla.org/docs/Web/API"
+            target="_blank" alt="Web APIs" />
+    <area shape="poly" coords="6,97,130,6,130,39,36,107"
+            href="https://developer.mozilla.org/docs/Web/CSS"
+            target="_blank" alt="CSS" />
+</map>
+<img usemap="#infographic" src="/media/examples/mdn-info.png" alt="MDN infographic" />
+                
+            </xmp></td>
+            <td class="fifth_col">
+                <div class="img_style">
+                    <map name="infographic">
+                        <area shape="rect" coords="184,6,253,27"
+                              href="https://mozilla.org"
+                              target="_blank" alt="Mozilla" />
+                        <area shape="circle" coords="130,136,60"
+                              href="https://developer.mozilla.org/"
+                              target="_blank" alt="MDN" />
+                        <area shape="poly" coords="130,6,253,96,223,106,130,39"
+                              href="https://developer.mozilla.org/docs/Web/Guide/Graphics"
+                              target="_blank" alt="Graphics" />
+                        <area shape="poly" coords="253,96,207,241,189,217,223,103"
+                              href="https://developer.mozilla.org/docs/Web/HTML"
+                              target="_blank" alt="HTML" />
+                        <area shape="poly" coords="207,241,54,241,72,217,189,217"
+                              href="https://developer.mozilla.org/docs/Web/JavaScript"
+                              target="_blank" alt="JavaScript" />
+                        <area shape="poly" coords="54,241,6,97,36,107,72,217"
+                              href="https://developer.mozilla.org/docs/Web/API"
+                              target="_blank" alt="Web APIs" />
+                        <area shape="poly" coords="6,97,130,6,130,39,36,107"
+                              href="https://developer.mozilla.org/docs/Web/CSS"
+                              target="_blank" alt="CSS" />
+                    </map>
+                    <img usemap="#infographic" src="/images/mdn-info.png" alt="MDN infographic" />
+    
+                </div>                
+            </td>
+        </tr>
+        <link rel="stylesheet" href="./css/img.css">
+
+
+
+
+
+        <!-- audio -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">音訊 /<br>audio /<br>播放聲音，</td>
+            <td class="third_col">audio</td>
+            <td class="forth_col"><xmp>
+<figure>
+    <figcaption>Listen to the T-Rex:</figcaption>
+    <audio
+        controls
+        src="/images/t-rex-roar.mp3">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+</figure>
+            </xmp></td>
+            <td class="fifth_col">
+                <figure>
+                    <figcaption>Listen to the T-Rex:</figcaption>
+                    <audio
+                        controls
+                        src="/images/t-rex-roar.mp3">
+                            Your browser does not support the
+                            <code>audio</code> element.
+                    </audio>
+                </figure>
+            </td>
+        </tr>
+
+
+
+
+
+        <!-- img -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">圖片 /<br>image  /<br>嵌入圖片</td>
+            <td class="third_col">img</td>
+            <td class="forth_col"><xmp>
+<img class="fit-picture"
+    src="/images/grapefruit-slice-332-332.jpg"
+    alt="Grapefruit slice atop a pile of other slices">
+            </xmp></td>
+            <td class="fifth_col">
+                <img class="fit-picture"
+                    src="/images/grapefruit-slice-332-332.jpg"
+                    alt="Grapefruit slice atop a pile of other slices">
+            </td>
+        </tr>
+        <link rel="stylesheet" href="./css/img0.css">
+
+
+
+
+
+
+        <!-- map -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">影像地圖 /<br>map /<br>在圖檔上劃分出區塊當成超連結使用</td>
+            <td class="third_col">map</td>
+            <td class="forth_col"><xmp>
+<map name="infographic">
+    <area shape="poly" coords="130,147,200,107,254,219,130,228"
+            href="https://developer.mozilla.org/docs/Web/HTML"
+            target="_blank" alt="HTML" />
+    <area shape="poly" coords="130,147,130,228,6,219,59,107"
+            href="https://developer.mozilla.org/docs/Web/CSS"
+            target="_blank" alt="CSS" />
+    <area shape="poly" coords="130,147,200,107,130,4,59,107"
+            href="https://developer.mozilla.org/docs/Web/JavaScript"
+            target="_blank" alt="JavaScript" />
+</map>
+<img usemap="#infographic" src="/media/examples/mdn-info2.png" alt="MDN infographic" />
+            </xmp></td>
+            <td class="fifth_col">
+                <div>
+                    <map name="infographic">
+                        <area shape="poly" coords="130,147,200,107,254,219,130,228"
+                              href="https://developer.mozilla.org/docs/Web/HTML"
+                              target="_blank" alt="HTML" />
+                        <area shape="poly" coords="130,147,130,228,6,219,59,107"
+                              href="https://developer.mozilla.org/docs/Web/CSS"
+                              target="_blank" alt="CSS" />
+                        <area shape="poly" coords="130,147,200,107,130,4,59,107"
+                              href="https://developer.mozilla.org/docs/Web/JavaScript"
+                              target="_blank" alt="JavaScript" />
+                    </map>
+                    <img usemap="#infographic" src="/images/mdn-info2.png" alt="MDN infographic" />
+                    
+                </div>
+            </td>
+        </tr>
+
+
+
+
+
+
+
+        <!-- track -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">字幕 /<br>track /<br>被當作媒體元素—audio 和 video的子元素來使用；字幕格式有 WebVTT 格式，以及指時序文本標記語言（TTML）格式</td>
+            <td class="third_col">track</td>
+            <td class="forth_col"><xmp>
+<video controls width="250"
+        src="/media/examples/friday.mp4">
+    
+        <track default kind="captions"
+            srclang="en"
+            src="/media/examples/friday.vtt"/>
+    
+        Sorry, your browser doesn't support embedded videos.
+</video>
+            </xmp></td>
+            <td class="fifth_col">
+                <video controls width="250"
+                    src="/images/friday.mp4">
+                
+                    <track default kind="captions"
+                        srclang="en"
+                        src="/images/friday.vtt"/>
+                
+                        Sorry, your browser doesn't support embedded videos.
+                </video>
+            </td>
+        </tr>
+
+
+
+
+
+
+        <!-- video -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">媒體播放器 /<br>video /<br>撥放影片</td>
+            <td class="third_col">video</td>
+            <td class="forth_col"><xmp>
+<video controls width="250">
+
+    <source src="/media/examples/flower.webm"
+            type="video/webm">
+
+    <source src="/media/examples/flower.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+            </xmp></td>
+            <td class="fifth_col">
+                <video controls width="250">
+
+                    <source src="/images/flower.webm"
+                            type="video/webm">
+                
+                    <source src="/images/flower.mp4"
+                            type="video/mp4">
+                
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+            </td>
+        </tr>
+
+
+
+
+
+
+
+
+        <!-- Embedded content 内嵌内容 -->
+        <tr style="line-height: 3rem;">
+            <th>No.</th>
+            <th>簡稱/原意/評價</th>
+            <th>元素</th>
+            <th>用法</th>
+            <th>效果</th>
+        </tr>
+
+
+
+
+
+        <!-- embed -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">嵌入 /<br>embedded  /<br>外部內容嵌入文檔，刷新後自動撥放 { 大多數現代瀏覽器已經棄用並取消了對瀏覽器插件的支持，少用 }</td>
+            <td class="third_col">embed</td>
+            <td class="forth_col"><xmp>
+<embed type="video/webm"
+    src="/media/examples/flower.mp4"
+    width="250"
+    height="200">
+            </xmp></td>
+            <td class="fifth_col">
+                <embed type="video/webm"
+                    src="/images/flower.mp4"
+                    width="250"
+                    height="200">
+            </td>
+        </tr>
+
+
+
+
+        <!-- temp -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">內嵌框架 /<br>Inline Frame /<br>用來在網頁內內置另一個網頁</td>
+            <td class="third_col">iframe</td>
+            <td class="forth_col"><xmp>
+<iframe id="inlineFrameExample"
+    title="Inline Frame Example"
+    width="300"
+    height="200"
+    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+</iframe>
+            </xmp></td>
+            <td class="fifth_col">
+                <div class="iframe_style">
+                    <iframe id="inlineFrameExample"
+                        title="Inline Frame Example"
+                        width="300"
+                        height="200"
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+                    </iframe>
+                </div>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="./css/iframe.css">
+
+
+
+
+
+
+        <!-- object -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">物件 /<br>object /<br>引入一個外部資源</td>
+            <td class="third_col">object</td>
+            <td class="forth_col"><xmp>
+<object type="application/pdf"
+    data="/media/examples/In-CC0.pdf"
+    width="250"
+    height="200">
+</object>
+            </xmp></td>
+            <td class="fifth_col">
+                <object type="application/pdf"
+                    data="/images/In-CC0.pdf"
+                    width="250"
+                    height="200">
+                </object>
+            </td>
+        </tr>
+
+
+
+
+
+
+
+        <!-- param -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">參數 /<br>parameters /<br>是object的子元素，是object的定義參數</td>
+            <td class="third_col">param</td>
+            <td class="forth_col"><xmp>
+<object data="horse.wav">
+    <param name="autoplay" value="true">
+</object>
+            </xmp></td>
+            <td class="fifth_col">
+                <!-- <object data="/images/horse.wav"> -->
+                    <object data="/images/kc144v26.mp3">
+                    <param name="autoplay" value="true">
+                </object>
+            </td>
+        </tr>
+
+
+
+
+
+
+        <!-- picture -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">換圖 /<br>picture /<br>不同的顯示/設備場景提供圖像</td>
+            <td class="third_col">picture</td>
+            <td class="forth_col"><xmp>
+<picture>
+    <source srcset="/media/examples/surfer-240-200.jpg"
+            media="(min-width: 800px)">
+    <img src="/media/examples/painted-hand-298-332.jpg" />
+</picture>
+            </xmp></td>
+            <td class="fifth_col">
+                <picture>
+                    <source srcset="/images/surfer-240-200.jpg"
+                            media="(min-width: 800px)">
+                    <img src="/images/painted-hand-298-332.jpg" />
+                </picture>
+            </td>
+        </tr>
+
+
+
+
+
+
+        <!-- source -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">多源 /<br>source /<br>為 picture> audio 或者 video 的子元素</td>
+            <td class="third_col">source</td>
+            <td class="forth_col"><xmp>
+<video controls
+    width="250"
+    height="200"
+    muted>
+    <source src="/media/examples/flower.webm"
+            type="video/webm">
+    <source src="/media/examples/flower.mp4"
+            type="video/mp4">
+    This browser does not support the HTML5 video element.
+</video>
+            </xmp></td>
+            <td class="fifth_col">
+                <video controls
+                    width="250"
+                    height="200"
+                    muted>
+                    <source src="/images/flower.webm"
+                            type="video/webm">
+                    <source src="/images/flower.mp4"
+                            type="video/mp4">
+                    This browser does not support the HTML5 video element.
+                </video>
+            </td>
+        </tr>
+
+
+
+
+
+
+
+
+        <!-- Scripting 腳本 -->
+        <tr style="line-height: 3rem;">
+            <th>No.</th>
+            <th>簡稱/原意/評價</th>
+            <th>元素</th>
+            <th>用法</th>
+            <th>效果</th>
+        </tr>
+
+
+
+        <!-- canvas -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">繪圖與動畫 /<br>canvas /<br>用來通過JavaScript（Canvas API 或 WebGL API）繪製圖形及圖形動畫</td>
+            <td class="third_col">canvas</td>
+            <td class="forth_col"><xmp>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+// Create gradient
+var grd = ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white");
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,150,80);
+</script>
+    
+            </xmp></td>
+            <td class="fifth_col">
+                <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+                    Your browser does not support the HTML5 canvas tag.</canvas>
+                    
+                <script>
+                    var c = document.getElementById("myCanvas");
+                    var ctx = c.getContext("2d");
+                    // Create gradient
+                    var grd = ctx.createLinearGradient(0,0,200,0);
+                    grd.addColorStop(0,"red");
+                    grd.addColorStop(1,"white");
+                    // Fill with gradient
+                    ctx.fillStyle = grd;
+                    ctx.fillRect(10,10,150,80);
+                </script>
+                    
+            </td>
+        </tr>
+
+
+
+
+        <!-- noscript -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">不支援的替代方案 /<br>noscript /<br>腳本未被執行時的替代內容</td>
+            <td class="third_col">noscript</td>
+            <td class="forth_col"><xmp>
+略
+            </xmp></td>
+            <td class="fifth_col">
+                <p><a href="https://www.wibibi.com/info.php?tid=396">參考連結</a></p>
+                
+            </td>
+        </tr>
+
+
+
+
+
+
+
+        <!-- script -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">動態腳本 /<br>script /<br>引用可執行腳本</td>
+            <td class="third_col">script</td>
+            <td class="forth_col"><xmp>
+<script>
+    alert("Hello World!");
+</script>
+            </xmp></td>
+            <td class="fifth_col">
+                <script>
+                    // alert("Hello World!");
+                </script>
+            </td>
+        </tr>
+
+
+
+
+
+
+
+        <!-- Demarcating edits 編輯標識 -->
+        <tr style="line-height: 3rem;">
+            <th>No.</th>
+            <th>簡稱/原意/評價</th>
+            <th>元素</th>
+            <th>用法</th>
+            <th>效果</th>
+        </tr>
+
+
+
+
+        <!-- del -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">刪除 /<br>deleted /<br>表示一些被從文檔中刪除的文字內容，顯示修改記錄或者源代碼差異，自動畫刪除線表示</td>
+            <td class="third_col">del</td>
+            <td class="forth_col"><xmp>
+<blockquote>
+    There is <del>nothing</del> <ins>no code</ins> 
+    either good or bad, but <del>thinking</del> 
+    <ins>running it</ins> makes it so.
+</blockquote>
+            </xmp></td>
+            <td class="fifth_col">
+                <div class="del_style">
+                    <blockquote>
+                        There is <del>nothing</del> <ins>no code</ins> either good or bad, but <del>thinking</del> <ins>running it</ins> makes it so.
+                    </blockquote>
+                </div>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="./css/del.css">
+
+
+
+
+
+        <!-- ins -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">插入 /<br>insert /<br> 顯示已經被插入文檔中的文本</td>
+            <td class="third_col">ins</td>
+            <td class="forth_col"><xmp>
+<p>“You're late!”</p>
+<del>
+    <p>“I apologize for the delay.”</p>
+</del>
+<ins cite="../howtobeawizard.html" datetime="2018-05">
+    <p>“A wizard is never late …”</p>
+</ins>
+            </xmp></td>
+            <td class="fifth_col">
+                <div class="ins_style">
+                    <p>“You're late!”</p>
+                    <del>
+                        <p>“I apologize for the delay.”</p>
+                    </del>
+                    <ins cite="../howtobeawizard.html" datetime="2018-05">
+                        <p>“A wizard is never late …”</p>
+                    </ins>
+                </div>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="./css/ins.css">
+
+
+
+
+
+
+
+        <!-- Table content 表格內容 -->
+        <tr style="line-height: 3rem;">
+            <th>No.</th>
+            <th>簡稱/原意/評價</th>
+            <th>元素</th>
+            <th>用法</th>
+            <th>效果</th>
+        </tr>
+
+
+
+
+        <!-- caption -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">表格標題 /<br>caption /<br>展示一個表格的標題，它常常作為 table 的第一個子元素出現，同時顯示在表格內容的最前面</td>
+            <td class="third_col">caption</td>
+            <td class="forth_col"><xmp>
+    <table>
+        <caption>He-Man and Skeletor facts</caption>
+        <tr>
+            <td> </td>
+            <th scope="col" class="heman">He-Man</th>
+            <th scope="col" class="skeletor">Skeletor</th>
+        </tr>
+        <tr>
+            <th scope="row">Role</th>
+            <td>Hero</td>
+            <td>Villain</td>
+        </tr>
+        <tr>
+            <th scope="row">Weapon</th>
+            <td>Power Sword</td>
+            <td>Havoc Staff</td>
+        </tr>
+        <tr>
+            <th scope="row">Dark secret</th>
+            <td>Expert florist</td>
+            <td>Cries at romcoms</td>
+        </tr>
+    </table>
+            </xmp></td>
+            <td class="fifth_col">
+                <div class="caption_style">
+                    <table>
+                        <caption>He-Man and Skeletor facts</caption>
+                        <tr>
+                            <td> </td>
+                            <th scope="col" class="heman">He-Man</th>
+                            <th scope="col" class="skeletor">Skeletor</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Role</th>
+                            <td>Hero</td>
+                            <td>Villain</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Weapon</th>
+                            <td>Power Sword</td>
+                            <td>Havoc Staff</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Dark secret</th>
+                            <td>Expert florist</td>
+                            <td>Cries at romcoms</td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="./css/caption.css">
+
+
+
+
+        <!-- col colgroup-->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">列, 表格列組 /<br>column /<br>定義表格中的列；定義表中的一組列表</td>
+            <td class="third_col">col, colgroup</td>
+            <td class="forth_col"><xmp>
+    <table>
+        <caption>Superheros and sidekicks</caption>
+        <colgroup>
+            <col>
+            <col span="2" class="batman">
+            <col span="2" class="flash">
+        </colgroup>
+        <tr>
+            <td> </td>
+            <th scope="col">Batman</th>
+            <th scope="col">Robin</th>
+            <th scope="col">The Flash</th>
+            <th scope="col">Kid Flash</th>
+        </tr>
+        <tr>
+            <th scope="row">Skill</th>
+            <td>Smarts</td>
+            <td>Dex, acrobat</td>
+            <td>Super speed</td>
+            <td>Super speed</td>
+        </tr>
+    </table>
+            </xmp></td>
+            <td class="fifth_col">
+                <div class="col_style">
+                    <table>
+                        <caption>Superheros and sidekicks</caption>
+                        <colgroup>
+                            <col>
+                            <col span="2" class="batman">
+                            <col span="2" class="flash">
+                        </colgroup>
+                        <tr>
+                            <td> </td>
+                            <th scope="col">Batman</th>
+                            <th scope="col">Robin</th>
+                            <th scope="col">The Flash</th>
+                            <th scope="col">Kid Flash</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Skill</th>
+                            <td>Smarts</td>
+                            <td>Dex, acrobat</td>
+                            <td>Super speed</td>
+                            <td>Super speed</td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="./css/col.css">
+
+
+
+
+
+
+        <!-- table -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">表格 /<br>table /<br>顯示表格數據</td>
+            <td class="third_col">table</td>
+            <td class="forth_col"><xmp>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">The table header</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>The table body</td>
+                <td>with two columns</td>
+            </tr>
+        </tbody>
+    </table>
+            </xmp></td>
+            <td class="fifth_col">
+                <div class="table_style">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">The table header</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>The table body</td>
+                                <td>with two columns</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="./css/table.css">
+
+
+
+
+        <!-- tbody -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">表格主體 /<br>Table Body /<br>顯示表格的主體內容，與 thead 和 tfoot 元素結合起來使用</td>
+            <td class="third_col">tbody</td>
+            <td class="forth_col"><xmp>
+    <table>
+        <caption>Council budget (in £) 2018</caption>
+        <thead>
+            <tr>
+                <th>Items</th>
+                <th scope="col">Expenditure</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Donuts</th>
+                <td>3,000</td>
+            </tr>
+            <tr>
+                <th scope="row">Stationery</th>
+                <td>18,000</td>
+            </tr>
+        </tbody>
+    </table>
+            </xmp></td>
+            <td class="fifth_col">
+                <div class="tbody_style">
+                    <table>
+                        <caption>Council budget (in £) 2018</caption>
+                        <thead>
+                            <tr>
+                                <th>Items</th>
+                                <th scope="col">Expenditure</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Donuts</th>
+                                <td>3,000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Stationery</th>
+                                <td>18,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="./css/tbody.css">
+
+
+
+
+
+
+        <!-- td th tr -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">表內數據、表頭、表行 /<br>td: table data, th: table header, tr: table row /<br>表格：td為包含數據、th為表頭、tr為表格中的行，通常一起用</td>
+            <td class="third_col">td th tr</td>
+            <td class="forth_col"><xmp>
+    <table>
+        <caption>Alien football stars</caption>
+        <tr>
+            <th scope="col">Player</th>
+            <th scope="col">Gloobles</th>
+            <th scope="col">Za'taak</th>
+        </tr>
+        <tr>
+            <th scope="row">TR-7</th>
+            <td>7</td>
+            <td>4,569</td>
+        </tr>
+        <tr>
+            <th scope="row">Khiresh Odo</th>
+            <td>7</td>
+            <td>7,223</td>
+        </tr>
+        <tr>
+            <th scope="row">Mia Oolong</th>
+            <td>9</td>
+            <td>6,219</td>
+        </tr>
+    </table>
+            </xmp></td>
+            <td class="fifth_col">
+                <div class="tdthtr_style">
+                    <table>
+                        <caption>Alien football stars</caption>
+                        <tr>
+                            <th scope="col">Player</th>
+                            <th scope="col">Gloobles</th>
+                            <th scope="col">Za'taak</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">TR-7</th>
+                            <td>7</td>
+                            <td>4,569</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Khiresh Odo</th>
+                            <td>7</td>
+                            <td>7,223</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Mia Oolong</th>
+                            <td>9</td>
+                            <td>6,219</td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="./css/tdthtr.css">
+
+
+
+
+        <!-- thead -->
+        <tr>
+            <td class="first_col"><span class="mycount"></span></td>
+            <td class="second_col">表頭 /<br>thead /<br>定義表格的列頭的行，通常與th合用，並賦予表頭意義</td>
+            <td class="third_col">thead</td>
+            <td class="forth_col"><xmp>
+    <table>
+        <caption>Council budget (in £) 2018</caption>
+        <thead>
+            <tr>
+                <th scope="col">Items</th>
+                <th scope="col">Expenditure</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Donuts</th>
+                <td>3,000</td>
+            </tr>
+            <tr>
+                <th scope="row">Stationery</th>
+                <td>18,000</td>
+            </tr>
+        </tbody>
+    </table>
+            </xmp></td>
+            <td class="fifth_col">
+                <div class="thead_style">
+                    <table>
+                        <caption>Council budget (in £) 2018</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Items</th>
+                                <th scope="col">Expenditure</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Donuts</th>
+                                <td>3,000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Stationery</th>
+                                <td>18,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="./css/thead.css">
+
+
+
+
+
+
+        <!-- Forms 互動用表單 -->
+        <tr style="line-height: 3rem;">
+            <th>No.</th>
+            <th>簡稱/原意/評價</th>
+            <th>元素</th>
+            <th>用法</th>
+            <th>效果</th>
+        </tr>
+
+
+
+
+
         <!-- temp -->
         <tr>
             <td class="first_col"><span class="mycount"></span></td>
@@ -1427,6 +2388,38 @@ composition of substances) and <b class="term">physics</b>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
 
 
 
