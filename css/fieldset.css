@@ -1,0 +1,13 @@
+.fieldset_style legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+}
+
+.fieldset_style .output {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.fieldset_style input {
+    margin: .4rem;
+}

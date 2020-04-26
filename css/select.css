@@ -1,0 +1,26 @@
+.select_style label,
+.select_style footer {
+    font-family: sans-serif;
+}
+
+.select_style label {
+    font-size: 1rem;
+    padding-right: 10px;
+}
+
+.select_style select {
+    font-size: .9rem;
+    padding: 2px 5px;
+}
+
+.select_style footer {
+    font-size: .8rem;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.select_style .output {
+    background: center/cover no-repeat url('./images/hamster.jpg');
+    position: relative;
+}

@@ -1,0 +1,16 @@
+.form_style form.form-example {
+    display: table;
+}
+
+.form_style div.form-example {
+    display: table-row;
+}
+
+.form_style label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+.form_style label {
+    padding-right: 10px;
+}

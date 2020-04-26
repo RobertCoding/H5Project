@@ -1,0 +1,20 @@
+.summary_style details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+}
+
+.summary_style summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+.summary_style details[open] {
+    padding: .5em;
+}
+
+.summary_style details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
